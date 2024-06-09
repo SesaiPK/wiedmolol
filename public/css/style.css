@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../css/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../css/fonts/Inter-Black.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    font-family: "Inter", sans-serif;
+    background-color: #2b2b2b;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: #d9d9d9;
+}
+
+.logo>img {
+    align-self: center;
+}
+
+.logo a {
+    font-size: 1.2rem;
+    margin-left: 0.5em;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    color: #d9d9d9;
+}
+
+
+.container {
+    background: #353434;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+}
+
+.signup-bar {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.signup-bar p {
+    color: #333333;
+}
+
+form {
+    display: flex;
+    width: 40rem;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+}
+
+.login-buttons button {
+    margin-bottom: 1em;
+}
+
+.login-buttons img{
+    width: 3em;
+}
+
+
+button[name="withFacebook"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    background: #fff;
+    border-radius: 3em;
+    line-height: 4em;
+}
+
+button[name="withFacebook"] span {
+    margin-left: 1em;
+}
+
+button[name="withFacebook"]:hover {
+    background: #ccc;
+}
+
+button[name="withFacebook"]:active {
+    background: #999;
+}
+
+button[name="withGoogle"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    background: #fff;
+    border-radius: 3em;
+    line-height: 4em;
+}
+
+button[name="withGoogle"] span {
+    margin-left: 1em;
+}
+
+button[name="withGoogle"]:hover {
+    background: #ccc;
+}
+
+button[name="withGoogle"]:active {
+    background: #999;
+}
+
+button[name="withApple"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    background: #fff;
+    border-radius: 3em;
+    line-height: 4em;
+}
+
+button[name="withApple"] span {
+    margin-left: 1em;
+}
+
+button[name="withApple"]:hover {
+    background: #ccc;
+}
+
+button[name="withApple"]:active {
+    background: #999;
+}
+
+form>input {
+    margin: 0 1em 1em;
+    padding-left: 0.5em;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    border-radius: 1em;
+    line-height: 4em;
+}
+
+button[name="logIn"] {
+    color: #ffffff;
+
+    background: #111111;
+    opacity: 0.5;
+    border: 1px solid #111111;
+    border-radius: 3em;
+    line-height: 4em;
+}
+
+button[name="logIn"]:hover {
+    background: #222222;
+}
+
+button[name="logIn"]:active {
+    background: #444444;
+}
+
+button[name="signUp"] {
+    font-family: 'Poppins', sans-serif;
+    width: 40rem;
+    color: #333;
+    background: #b07a7a;
+    border: 1px solid #662626;
+    border-radius: 3em;
+
+    margin-bottom: 1em;
+    line-height: 4em;
+}
+
+button[name="signUp"]:hover {
+    background: #b48484;
+}
+
+button[name="signUp"]:active {
+    background: #c09595;
+}
+
+@media only screen and (max-device-width:420px) {
+
+    *{
+        font-size: 36px;
+    }
+}
