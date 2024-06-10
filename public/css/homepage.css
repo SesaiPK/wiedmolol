@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: url('/public/img/bathtubgeralt.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff; /* Default text color set to white */
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Ensure the main container does not overlay the background */
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-name {
+    color: #d9d9d9;
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: none;
+    height: 20px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #1a1a1a; /* Darker than the header bar */
+    border: none;
+    border-radius: 15px; /* Curved edges */
+    color: #b3b3b3; /* Brighter than the header bar */
+}
+
+.search-bar:focus {
+    outline: none; /* Remove the white border on focus */
+}
+
+.icon {
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icon-profile {
+    height: 40px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.7); /* Brighter and slightly transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #ffffff; /* Set text color to black for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.popular {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.community {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.explore {
+    width: 250px;
+    margin-left: 10px;
+}
+
+.popular-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popular-img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.popular-img:hover {
+    transform: scale(1.05);
+}
+
+.popular-text {
+    display: block;
+    margin-top: 10px;
+    color: #222222; /* Set text color to black */
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.popular-text:hover {
+    color: #555555; /* Slightly darker on hover */
+}
+
+.post {
+    background: rgba(50, 50, 50, 0.8); /* Slightly darker and transparent */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Set text color to white */
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post p {
+    margin: 5px 0;
+}
+
+.explore-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.explore-img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.explore-img:hover {
+    transform: scale(1.05);
+}
