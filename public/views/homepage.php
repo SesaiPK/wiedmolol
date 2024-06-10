@@ -3,31 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="/public/css/projects.css">
-    <script>
-        function toggleSearchBar() {
-            var searchBar = document.getElementById("search-bar");
-            if (searchBar.style.display === "none" || searchBar.style.display === "") {
-                searchBar.style.display = "block";
-                searchBar.focus(); // Set focus on the search bar
-            } else {
-                searchBar.style.display = "none";
-            }
-        }
-    </script>
+    <title>Wiedmolol</title>
+    <link rel="stylesheet" href="/public/css/homepage.css">
+    <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="main-container">
     <header>
         <div class="header-left">
-            <img src="/public/img/logo.svg" alt="Logo" class="logo">
+            <a href="homepage"><img src="/public/img/logo.svg" alt="Logo" class="logo"></a>
             <h1 class="site-name">Wiedmolol</h1>
         </div>
         <div class="header-right">
-            <input type="text" id="search-bar" class="search-bar" placeholder="Search..." style="display: none;">
-            <img src="/public/img/search.svg" alt="Search" class="icon" onclick="toggleSearchBar()">
-            <a href="projects"><img src="/public/img/categories.svg" alt="Categories" class="icon"></a>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
             <a href="login"><img src="/public/img/profile.svg" alt="Profile" class="icon icon-profile"></a>
         </div>
     </header>
@@ -70,18 +58,6 @@
                 echo '</div>';
             }
             ?>
-        </div>
-        <div class="box explore">
-            <h2>Explore</h2>
-            <div class="explore-item">
-                <a href="books"><img src="/public/img/books.svg" alt="Books" class="explore-img"></a>
-            </div>
-            <div class="explore-item">
-                <a href="series"><img src="/public/img/series.svg" alt="Series" class="explore-img"></a>
-            </div>
-            <div class="explore-item">
-                <a href="games"><img src="/public/img/games.svg" alt="Games" class="explore-img"></a>
-            </div>
         </div>
     </section>
 </div>

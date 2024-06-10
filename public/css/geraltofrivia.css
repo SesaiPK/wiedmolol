@@ -51,8 +51,7 @@ header {
 }
 
 .search-bar {
-    display: none;
-    height: 30px;
+    height: 20px;
     margin-right: 20px;
     padding: 5px 10px;
     font-size: 16px;
@@ -86,24 +85,26 @@ header {
 }
 
 .character-profile {
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    max-width: 800px;
-    width: 100%;
+    width: 90%; /* Adjust this value to change how much space it occupies */
+    max-width: 1200px;
+    height: auto; /* Allow it to adjust based on content */
+    position: relative;
 }
 
 .character-img {
     border-radius: 10px;
-    width: 200px;
-    margin-right: 20px;
+    width: 400px;
+    margin: 0 0 20px 20px;
+    float: right;
 }
 
 .character-info {
     color: #000;
+    overflow: hidden; /* Ensure text wraps around the image properly */
 }
 
 .character-info h2 {
@@ -112,4 +113,67 @@ header {
 
 .character-info p {
     margin: 5px 0;
+}
+
+/* Form Styling */
+.create-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust this value to change how much space it occupies */
+    max-width: 1200px;
+    height: auto; /* Allow it to adjust based on content */
+    position: relative;
+    text-align: center; /* Center the text inside the container */
+}
+
+.create-content h1 {
+    color: #2B2B2B;
+    margin-bottom: 20px;
+}
+
+.create-post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make the form occupy the full width of the container */
+}
+
+.form-input {
+    width: 100%; /* Make the inputs occupy the full width of the form */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.title-input {
+    height: 40px;
+}
+
+.content-input {
+    height: 150px;
+    resize: vertical; /* Allows users to resize the textarea vertically */
+}
+
+.submit-button {
+    width: 100%; /* Make the button occupy the full width of the form */
+    padding: 10px;
+    background-color: #2B2B2B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1a1a1a;
 }
