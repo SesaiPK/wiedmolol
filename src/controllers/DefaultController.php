@@ -9,10 +9,11 @@ class DefaultController extends AppController {
     public function login() {
         $this->render('login');
     }
-    public function homepage()
-    {
-        $this->render('homepage');
+
+    public function register() {
+        $this->render('register');
     }
+
     public function geraltofrivia()
     {
         $this->render('geraltofrivia');

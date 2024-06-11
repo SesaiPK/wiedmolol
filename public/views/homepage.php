@@ -41,21 +41,18 @@
         </div>
         <div class="box community">
             <h2>Community</h2>
+            <a href="createPost" class="create-post-button">Create Post</a>
             <?php
-            // Example array of posts
-            $posts = [
-                ["title" => "First Post", "author" => "User1", "content" => "This is the first post content."],
-                ["title" => "Second Post", "author" => "User2", "content" => "This is the second post content."],
-                ["title" => "Third Post", "author" => "User3", "content" => "This is the third post content."]
-            ];
-
-            // Loop through each post and generate the HTML
-            foreach ($posts as $post) {
-                echo '<div class="post">';
-                echo '<h3>' . htmlspecialchars($post['title']) . '</h3>';
-                echo '<p><strong>By: </strong>' . htmlspecialchars($post['author']) . '</p>';
-                echo '<p>' . htmlspecialchars($post['content']) . '</p>';
-                echo '</div>';
+            if (isset($posts) && is_array($posts) && count($posts) > 0) {
+                foreach ($posts as $post) {
+                    echo '<div class="post">';
+                    echo '<h3>' . htmlspecialchars($post->getTitle()) . '</h3>';
+                    echo '<p><strong>By: </strong>' . htmlspecialchars($post->getAuthorName()) . '</p>';
+                    echo '<p>' . htmlspecialchars($post->getContent()) . '</p>';
+                    echo '</div>';
+                }
+            } else {
+                echo '<p>No posts available.</p>';
             }
             ?>
         </div>
