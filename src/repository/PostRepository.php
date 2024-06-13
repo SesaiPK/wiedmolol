@@ -35,4 +35,12 @@ class PostRepository extends Repository
 
         return $posts;
     }
+    public function getPostByString(string $searchString){
+        $searchString='%'.strtolower($searchString).'%';
+        $stmt = $this->db->connect()->prepare('SELECT posts.*, users.nickname AS author FROM posts JOIN users ON posts.author = users.id WHERE LOWER(title) LIKE :searchString OR LOWER(content) LIKE :searchString OR LOWER(users.nickname) LIKE :searchString ORDER BY id desc');
+        $stmt->bindParam(':searchString',$searchString,PDO::PARAM_STR);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

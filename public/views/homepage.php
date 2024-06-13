@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiedmolol</title>
     <link rel="stylesheet" href="/public/css/homepage.css">
+    <script type="text/javascript" src="./public/js/search.js" defer></script>
     <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -23,11 +24,13 @@
         <div class="box popular">
             <h2>Popular</h2>
             <div class="popular-item">
-                <a href="geraltofrivia"><img src="/public/img/geraltofrivia.svg" alt="Geralt of Rivia" class="popular-img"></a>
+                <a href="geraltofrivia"><img src="/public/img/geraltofrivia.svg" alt="Geralt of Rivia"
+                                             class="popular-img"></a>
                 <a href="geraltofrivia" class="popular-text">Geralt of Rivia</a>
             </div>
             <div class="popular-item">
-                <a href="yenneferofvengerberg"><img src="/public/img/yenneferofvengerberg.svg" alt="Yennefer of Vengerberg" class="popular-img"></a>
+                <a href="yenneferofvengerberg"><img src="/public/img/yenneferofvengerberg.svg"
+                                                    alt="Yennefer of Vengerberg" class="popular-img"></a>
                 <a href="yenneferofvengerberg" class="popular-text">Yennefer of Vengerberg</a>
             </div>
             <div class="popular-item">
@@ -35,28 +38,40 @@
                 <a href="gaunterodimm" class="popular-text">Gaunter O'Dimm</a>
             </div>
             <div class="popular-item">
-                <a href="emhyrvaremreis"><img src="/public/img/emhyrvaremreis.svg" alt="Emhyr var Emreis" class="popular-img"></a>
+                <a href="emhyrvaremreis"><img src="/public/img/emhyrvaremreis.svg" alt="Emhyr var Emreis"
+                                              class="popular-img"></a>
                 <a href="emhyrvaremreis" class="popular-text">Emhyr var Emreis</a>
             </div>
         </div>
         <div class="box community">
             <h2>Community</h2>
             <a href="createPost" class="create-post-button">Create Post</a>
-            <?php
-            if (isset($posts) && is_array($posts) && count($posts) > 0) {
-                foreach ($posts as $post) {
-                    echo '<div class="post">';
-                    echo '<h3>' . htmlspecialchars($post->getTitle()) . '</h3>';
-                    echo '<p><strong>By: </strong>' . htmlspecialchars($post->getAuthorName()) . '</p>';
-                    echo '<p>' . htmlspecialchars($post->getContent()) . '</p>';
-                    echo '</div>';
+            <section class="posts">
+                <?php
+                if (isset($posts) && is_array($posts) && count($posts) > 0) {
+                    foreach ($posts as $post) {
+                        echo '<div class="post">';
+                        echo '<h3>' . htmlspecialchars($post->getTitle()) . '</h3>';
+                        echo '<p class="author"><strong>By: </strong>' . htmlspecialchars($post->getAuthorName()) . '</p>';
+                        echo '<p class="content">' . htmlspecialchars($post->getContent()) . '</p>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo '<p>No posts available.</p>';
                 }
-            } else {
-                echo '<p>No posts available.</p>';
-            }
-            ?>
+                ?>
+            </section>
         </div>
     </section>
 </div>
 </body>
+
+<template id="post-template">
+    <div class="post">
+        <h3>title</h3>
+        <p class="author"><strong>By: </strong>author</p>
+        <p class="content">content</p>
+    </div>
+
+</template>
 </html>

@@ -176,7 +176,7 @@ header {
     display: inline-block;
     margin-bottom: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #662626;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -184,7 +184,7 @@ header {
 }
 
 .create-post-button:hover {
-    background-color: #0056b3;
+    background-color: #b48484;
 }
 
 

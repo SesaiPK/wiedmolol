@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
@@ -10,15 +9,15 @@
 
 <body>
 
-
+<header>
+    <div class="header-left">
+        <a href="homepage"><img src="/public/img/logo.svg" alt="Logo" class="logo"></a>
+        <h1 class="site-name">Wiedmolol</h1>
+    </div>
+</header>
 <div class="container">
 
-    <form class=login" action="login" method="POST">
-        <div class="login-buttons">
-            <button name="withFacebook"><img src="public/img/fb.svg"><span>Continue with Facebook</span></button>
-            <button name="withGoogle"><img src="public/img/google.svg"><span>Continue with Google</span></button>
-            <button name="withApple"><img src="public/img/apple.svg"><span>Continue with Apple</span></button>
-        </div>
+    <form class="login" action="login" method="POST">
         <div class="messages">
             <?php if (isset($messages)) {
                 foreach ($messages as $message) {
@@ -33,8 +32,11 @@
 </div>
 <div class="signup-bar">
     <p>Don't have an account?</p>
-    <button name="signUp">Sign up</button>
+    <button name="signUp" onclick="redirectToRegister()">Sign up</button>
 </div>
+<script>
+    function redirectToRegister() {
+        window.location.href = 'register';
+    }
+</script>
 </body>
-
-</html>

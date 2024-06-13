@@ -1,16 +1,16 @@
 <?php
 class User {
-    private $id;
-    private $email;
-    private $password;
-    private $nickname;
+    private ?int $id;
+    private string $email;
+    private string $password;
+    private string $nickname;
     public function __construct(
-        int $id,
+        ?int $id,
         string $email,
         string $password,
         string $nickname
     ) {
-        $this->id=$id;
+        $this->id = $id;
         $this->email = $email;
         $this->password = $password;
         $this->nickname = $nickname;
@@ -29,4 +29,5 @@ class User {
     public function getId(): int{
         return $this->id;
     }
+
 }
