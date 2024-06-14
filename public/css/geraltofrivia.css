@@ -51,19 +51,9 @@ header {
 }
 
 .search-bar {
-    height: 20px;
-    margin-right: 20px;
-    padding: 5px 10px;
-    font-size: 16px;
-    background-color: #1a1a1a; /* Darker than the header bar */
-    border: none;
-    border-radius: 15px; /* Curved edges */
-    color: #b3b3b3; /* Brighter than the header bar */
+    display: none;
 }
 
-.search-bar:focus {
-    outline: none; /* Remove the white border on focus */
-}
 
 .icon {
     height: 30px;
@@ -177,3 +167,4 @@ header {
 .submit-button:hover {
     background-color: #1a1a1a;
 }
+

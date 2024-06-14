@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Wiedmolol</title>
     <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
 </head>

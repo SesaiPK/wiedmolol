@@ -16,6 +16,7 @@ class PostController extends AppController
 
     public function homepage()
     {
+        session_start();
         $posts = $this->postRepository->getAllPosts();
         $this->render('homepage', ['posts' => $posts]);
     }

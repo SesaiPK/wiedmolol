@@ -27,11 +27,11 @@ class PostRepository extends Repository
         $stmt = $this->db->connect()->prepare('SELECT posts.*, users.nickname FROM posts JOIN users ON posts.author = users.id ORDER BY id desc ');
         $stmt->execute(); // Execute the statement
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
         $posts = [];
         foreach ($results as $result) {
             $posts[] = new Post($result['title'], $result['content'], $result['nickname']);
         }
+
 
         return $posts;
     }
@@ -42,5 +42,11 @@ class PostRepository extends Repository
         $stmt->execute();
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function deletePost($id)
+    {
+        $stmt = $this->db->connect()->prepare('DELETE FROM posts WHERE id = :id');
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
     }
 }
