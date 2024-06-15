@@ -8,17 +8,18 @@
     <link rel="icon" href="/public/img/logo.svg" type="image/svg+xml">
 </head>
 <body>
+<header>
+    <div class="header-left">
+        <a href="homepage"><img src="/public/img/logo.svg" alt="Logo" class="logo"></a>
+        <h1 class="site-name">Wiedmolol</h1>
+    </div>
+    <div class="header-right">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+        <a href="login"><img src="/public/img/profile.svg" alt="Profile" class="icon icon-profile"></a>
+    </div>
+</header>
 <div class="main-container">
-    <header>
-        <div class="header-left">
-            <a href="homepage"><img src="/public/img/logo.svg" alt="Logo" class="logo"></a>
-            <h1 class="site-name">Wiedmolol</h1>
-        </div>
-        <div class="header-right">
-            <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
-            <a href="login"><img src="/public/img/profile.svg" alt="Profile" class="icon icon-profile"></a>
-        </div>
-    </header>
+
     <section class="content">
         <div class="character-profile">
             <img src="/public/img/yenneferofvengerberg.svg" alt="Yenefer of Vengerberg" class="character-img">
