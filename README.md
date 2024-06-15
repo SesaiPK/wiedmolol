@@ -7,8 +7,9 @@ Wiedmolol is an application designed for fans of the Witcher Universe, providing
 3. [Technologies](#technologies)
 4. [Database Design and Structure](#database-design-and-structure)
 5. [Design Patterns](#design-patterns)
-6. [Screenshots](#screenshots)
-7. [License](#license)
+6. [UML](#UML)
+7. [Screenshots](#screenshots)
+8. [License](#license)
 
 ## Installation
 
@@ -81,6 +82,10 @@ The application utilizes a PostgresSQL database with tables designed for users a
    - Singleton design pattern is utilized for managing the database connections
 3. Repository Pattern
    - This application utilizes the Repository pattern to provide a clean separation between the domain and data access layers
+
+
+## UML
+![UML](wiedmolol_uml.png "UML")
 
 
 ## Screenshots
