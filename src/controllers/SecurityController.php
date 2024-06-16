@@ -32,8 +32,8 @@ class SecurityController extends AppController
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
         $_SESSION['user'] = [
-            'id' => $user->getId(), // Assuming the User object has a getId method
-            'nickname' => $user->getNickname(), // Assuming the User object has a getNickname method
+            'id' => $user->getId(),
+            'nickname' => $user->getNickname(),
             'email' => $email,
             'role' => $user->getRole(),
         ];

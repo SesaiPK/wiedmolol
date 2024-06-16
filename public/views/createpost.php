@@ -23,11 +23,11 @@
         <div class="create-content">
             <h1>Upload</h1>
 
-                <form action="createPost" method="post" enctype="multipart/form-data" class="create-post-form">
-                    <input name="title" type="text" placeholder="Title" class="form-input title-input">
-                    <textarea name="content" rows="10" placeholder="Content" class="form-input content-input"></textarea>
-                    <button type="submit" class="submit-button">Submit</button>
-                </form>
+            <form action="createPost" method="post" enctype="multipart/form-data" class="create-post-form">
+                <input name="title" type="text" placeholder="Title" class="form-input title-input">
+                <textarea name="content" rows="10" placeholder="Content" class="form-input content-input"></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
 
         </div>
 

@@ -26,12 +26,12 @@ class PostController extends AppController
         session_start();
         if ($this->isPost()) {
             if (isset($_SESSION['user']['id'])) {
-                $authorId = $_SESSION['user']['id']; // Get the user ID from the session
+                $authorId = $_SESSION['user']['id'];
             } else {
                 $this->messages[] = 'Author information is missing in session.';
                 return $this->render('createPost', ['messages' => $this->messages]);
             }
-            $post = new Post($_POST['title'], $_POST['content'],$authorId);
+            $post = new Post($_POST['title'], $_POST['content'], $authorId);
             $this->postRepository->addPost($post);
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/homepage");
@@ -40,6 +40,7 @@ class PostController extends AppController
         }
         return $this->render('createPost', ['messages' => $this->messages]);
     }
+
     public function search()
     {
         $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';

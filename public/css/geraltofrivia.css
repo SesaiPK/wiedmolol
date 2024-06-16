@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     background: url('/public/img/bathtubgeralt.svg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff; /* Default text color set to white */
+    color: #ffffff;
 }
 
 .main-container {
@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative; /* Ensure the main container does not overlay the background */
+    position: relative;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
     color: #d9d9d9;
     font-size: 24px;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header-right {
@@ -79,9 +79,9 @@ header {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Adjust this value to change how much space it occupies */
+    width: 90%;
     max-width: 1200px;
-    height: auto; /* Allow it to adjust based on content */
+    height: auto;
     position: relative;
 }
 
@@ -94,7 +94,7 @@ header {
 
 .character-info {
     color: #000;
-    overflow: hidden; /* Ensure text wraps around the image properly */
+    overflow: hidden;
 }
 
 .character-info h2 {
@@ -109,17 +109,17 @@ header {
 .create-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Adjust this value to change how much space it occupies */
+    width: 90%;
     max-width: 1200px;
-    height: auto; /* Allow it to adjust based on content */
+    height: auto;
     position: relative;
-    text-align: center; /* Center the text inside the container */
+    text-align: center;
 }
 
 .create-content h1 {
@@ -131,11 +131,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Make the form occupy the full width of the container */
+    width: 100%;
 }
 
 .form-input {
-    width: 100%; /* Make the inputs occupy the full width of the form */
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -149,11 +149,11 @@ header {
 
 .content-input {
     height: 150px;
-    resize: vertical; /* Allows users to resize the textarea vertically */
+    resize: vertical;
 }
 
 .submit-button {
-    width: 100%; /* Make the button occupy the full width of the form */
+    width: 100%;
     padding: 10px;
     background-color: #2B2B2B;
     color: #fff;

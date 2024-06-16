@@ -19,8 +19,8 @@
     <form class="login" action="register" method="POST">
         <div class="messages">
             <?php
-            if(isset($messages)){
-                foreach($messages as $message) {
+            if (isset($messages)) {
+                foreach ($messages as $message) {
                     echo $message;
                 }
             }

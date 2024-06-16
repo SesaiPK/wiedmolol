@@ -25,7 +25,9 @@
             <img src="/public/img/gaunterodimm.svg" alt="Gaunter O'Dimm" class="character-img">
             <div class="character-info">
                 <h2>Gaunter O'Dimm</h2>
-                <p>Gaunter O'Dimm, sometimes called Master Mirror or Man of Glass, was a powerful individual, creating pacts with people in exchange for their souls and being able to control time with a mere clap of his hands.
+                <p>Gaunter O'Dimm, sometimes called Master Mirror or Man of Glass, was a powerful individual, creating
+                    pacts with people in exchange for their souls and being able to control time with a mere clap of his
+                    hands.
             </div>
         </div>
     </section>

@@ -33,8 +33,8 @@ create function delete_user_posts() returns trigger
 as
 $$
 BEGIN
-DELETE FROM posts WHERE author = OLD.id;
-RETURN OLD;
+    DELETE FROM posts WHERE author = OLD.id;
+    RETURN OLD;
 END;
 $$;
 
@@ -44,5 +44,5 @@ create trigger delete_user_posts_trigger
     before delete
     on users
     for each row
-    execute procedure delete_user_posts();
+execute procedure delete_user_posts();
 

@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     background: url('/public/img/bathtubgeralt.svg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff; /* Default text color set to white */
+    color: #ffffff;
 }
 
 .main-container {
@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative; /* Ensure the main container does not overlay the background */
+    position: relative;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
     color: #d9d9d9;
     font-size: 24px;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header-right {
@@ -54,14 +54,14 @@ header {
     height: 20px;
     padding: 5px 10px;
     font-size: 16px;
-    background-color: #1a1a1a; /* Darker than the header bar */
+    background-color: #1a1a1a;
     border: none;
-    border-radius: 15px; /* Curved edges */
-    color: #b3b3b3; /* Brighter than the header bar */
+    border-radius: 15px;
+    color: #b3b3b3;
 }
 
 .search-bar:focus {
-    outline: none; /* Remove the white border on focus */
+    outline: none;
 }
 
 .icon {
@@ -83,12 +83,12 @@ header {
 }
 
 .box {
-    background: rgba(255, 255, 255, 0.7); /* Brighter and slightly transparent */
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    color: #000000; /* Set text color to black for better contrast */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .popular {
@@ -126,24 +126,24 @@ header {
 .popular-text {
     display: block;
     margin-top: 10px;
-    color: #222222; /* Set text color to black */
+    color: #222222;
     font-size: 16px;
     text-decoration: none;
     transition: color 0.2s;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .popular-text:hover {
-    color: #555555; /* Slightly darker on hover */
+    color: #555555;
 }
 
 .post {
-    background: rgba(50, 50, 50, 0.8); /* Slightly darker and transparent */
+    background: rgba(50, 50, 50, 0.8);
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #ffffff; /* Set text color to white */
+    color: #ffffff;
 }
 
 .post h3 {
@@ -186,7 +186,7 @@ header {
     background-color: #b48484;
 }
 
-/* Add these styles to your CSS file to style the profile page similarly to the homepage */
+
 .container {
     width: 80%;
     margin: auto;
@@ -194,12 +194,12 @@ header {
 }
 
 .profile-box {
-    background: rgba(255, 255, 255, 0.7); /* Brighter and slightly transparent */
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    color: #000000; /* Set text color to black for better contrast */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .profile-box h1 {
@@ -207,8 +207,7 @@ header {
 }
 
 .user-info p {
-    margin: 5px 0;
-    margin-bottom: 20px;
+    margin: 5px 0 20px;
 }
 
 .profile-actions form {
@@ -218,12 +217,12 @@ header {
 .profile-actions input[type="password"],
 .profile-actions button {
     display: block;
-    width: 100%; /* Full width minus padding and border */
+    width: 100%;
     padding: 10px;
-    margin: 0 auto 10px; /* Center align elements and add bottom margin */
+    margin: 0 auto 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    box-sizing: border-box;
 }
 
 .profile-actions button {
@@ -238,28 +237,33 @@ header {
     background-color: #b48484;
 }
 
-.admin-panel  {
-    background: rgba(255, 255, 255, 0.7); /* Brighter and slightly transparent */
+.admin-panel {
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    color: #000000; /* Set text color to black for better contrast */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 .admin-panel h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .admin-panel .section {
     margin-bottom: 30px;
 }
+
 .admin-panel .section h2 {
     margin-bottom: 10px;
 }
+
 .admin-panel .list {
     list-style: none;
     padding: 0;
 }
+
 .admin-panel .list li {
     padding: 10px;
     background-color: #fff;
@@ -270,9 +274,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .admin-panel .list li form {
     display: inline;
 }
+
 .admin-panel .list li button {
     background-color: #ff4d4d;
     color: white;
@@ -281,6 +287,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .profile-actions button,
 .delete-button {
     background-color: #662626;
@@ -300,8 +307,8 @@ header {
 @media (max-width: 768px) {
 
     .search-bar {
-          width: 50px;
-      }
+        width: 50px;
+    }
 
 
     .content {
@@ -310,7 +317,7 @@ header {
     }
 
     .popular {
-        display: none; /* Hide popular box on mobile devices */
+        display: none;
     }
 
     .community, .explore {

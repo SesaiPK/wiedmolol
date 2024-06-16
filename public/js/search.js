@@ -1,4 +1,4 @@
-const search=document.querySelector('input[placeholder="Search..."]');
+const search = document.querySelector('input[placeholder="Search..."]');
 const postContainer = document.querySelector(".posts");
 
 function loadPosts(posts) {
@@ -24,6 +24,7 @@ function createPost(post) {
 
     postContainer.appendChild(clone);
 }
+
 search.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
